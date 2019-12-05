@@ -1,0 +1,3 @@
+SELECT dept_id, last_name, salary,
+LAG (salary,1) OVER (PARTITION BY dept_id ORDER BY salary) AS lower_salary
+FROM employees;
