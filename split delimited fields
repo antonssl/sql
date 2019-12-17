@@ -1,0 +1,8 @@
+--oracle
+
+select
+regexp_substr('A,B,C,D', '[^, ]+', 1, 1, 'imx') col1,
+regexp_substr('A,B,C,D', '[^, ]+', 1, 2, 'imx') col2,
+regexp_substr('A,B,C,D', '[^, ]+', 1, 3, 'imx') col3,
+regexp_substr('A,B,C,D', '[^, ]+', 1, 4, 'imx') col4
+from dual
